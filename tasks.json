@@ -1,0 +1,69 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build & debug file C",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}.out"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build & debug file C++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}.out"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build & run file C",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}.out"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build & run file C++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}.out"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "python3",
+            "type": "shell",
+            "command": "/lib64/python3.7",
+            "args": ["${file}"]
+        }
+    ]
+}

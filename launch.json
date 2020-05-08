@@ -1,0 +1,149 @@
+{
+    // 使用 IntelliSense 以得知可用的屬性。
+    // 暫留以檢視現有屬性的描述。
+    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Run C",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": false
+                }
+            ],
+            "preLaunchTask": "build & run file C"
+        },
+        {
+            "name": "Run C++",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": false
+                }
+            ],
+            "preLaunchTask": "build & run file C++"
+        },
+        {
+            "name": "Debug C",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": false
+                }
+            ],
+            "preLaunchTask": "build & debug file C"
+        },
+        {
+            "name": "Debug C++",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": false
+                }
+            ],
+            "preLaunchTask": "build & debug file C++"
+        },
+        {
+            "name": "Python3",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "/usr/bin/python", //python3的安装路径
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": [
+                "RedirectOutput"
+            ]
+        },
+        {
+            "name": "Python: Terminal (integrated)",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "/usr/bin/python",
+            "program": "${file}",
+            "cwd": "",
+            "console": "integratedTerminal",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": []
+        },
+        {
+            "name": "Python: Terminal (external)",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "/usr/bin/python",
+            "program": "${file}",
+            "cwd": "",
+            "console": "externalTerminal",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": []
+        },
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "pythonPath": "/usr/bin/python",
+            "program": "/home/rem/Study/Code/django/mysite-master/mysite-master/manage.py",
+            "cwd": "/home/rem/Study/Code/django/mysite-master/mysite-master",
+            "args": [
+                "runserver",
+                "--noreload",
+                "--nothreading"
+            ],
+            "env": {},
+            "envFile": "/home/rem/Study/Code/django/mysite-master/mysite-master/.env",
+            "debugOptions": [
+                "RedirectOutput",
+                "Django"
+            ]
+        },
+    ]
+}
